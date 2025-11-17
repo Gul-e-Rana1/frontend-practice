@@ -9,9 +9,7 @@ This design is not my original creation. I do not claim ownership of the origina
 ## Purpose of This Project
 - Improve HTML and CSS skills
 - Practice recreating modern website layouts
-- Understand responsive design behavior
-- Learn the structure of professionally made UIs
-- Experiment with hero sections, navigation menus, and styled components
+- Experiment with hero sections, navigation menus and styled components
 
 ## Technologies Used
 - HTML5
@@ -25,3 +23,4 @@ This design is not my original creation. I do not claim ownership of the origina
 
 ## Note
 This project is created only for learning and practice. It is not intended for commercial use and should not be considered an official or original design.
+
