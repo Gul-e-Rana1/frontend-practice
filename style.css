@@ -420,9 +420,5 @@ body {
     .services-grid {
         justify-items: center;
     }
-
-    /* Footer adjustments */
-    .footer-container {
-        text-align: center;
-    }
 }
+
