@@ -1,0 +1,400 @@
+/* Reset defaults*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background-color: #fffaf5;
+  color: #2c2c2c;
+  line-height: 1.5;  
+}
+
+/*Navbar*/
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 38px 70px;
+  background-color: #fffaf5;
+  position: relative;
+}
+
+.logo {
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.logo img {
+  height: 70px;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  padding: 10px 20px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #222;
+  font-weight: 500;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #2eb6a7;
+}
+
+/* Dropdown hidden by default */
+.dropdown-menu {
+  display: none;
+  position: absolute;
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 6px;
+  box-shadow: 0px 4px 15px rgba(0,0,0,0.1);
+  margin-top: 10px;
+}
+
+/* Show only on hover */
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* Dropdown items */
+.dropdown-menu li {
+  list-style: none;
+  padding: 8px 20px;
+}
+
+.dropdown-menu li a {
+  color: #222;
+  text-decoration: none;
+}
+
+.dropdown-menu li a:hover {
+  color: #2eb6a7;
+}
+
+/*Book a Meeting button in Navbar*/
+.book-btn {
+  font-size: 16px;
+  background-color: #2eb6a7;
+  color: white;
+  border: none;
+  padding: 10px 18px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.book-btn:hover {
+  background-color: #f3a0a8;
+  color: white;
+}
+
+/* Hero section */
+.hero {
+  padding: 80px 120px;
+  text-align: left;
+  position: relative;
+}
+
+.hero-top {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 40px;
+  margin-bottom: 25px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: flex-start;
+  background-color: #fff3d9;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  margin: 0px 590px 50px 10px;
+}
+
+.badge .new {
+  display: inline-flex;
+  font-size: 15px;
+  background-color: #2eb6a7;
+  color: white;
+  border-radius: 9px;
+  padding: 4px 8px;
+  margin-right: 8px;
+}
+
+.badge a {
+  text-decoration: none;
+  font-size: 15px;
+  color: #26282b;
+  display: inline-flex;
+  align-items: center;
+}
+
+/* Headline */
+.hero h1 {
+  font-family: 'Futura-Bold', sans-serif;
+  font-size: 35px;
+  color: #2f2f3f;
+  margin-bottom: 18px;
+  font-weight: 700;
+}
+
+.hero h1 span {
+  background-color: #fadadd;
+  padding: 0px 5px;
+}
+
+/* Paragraph */
+.hero p {
+  font-family: 'Futura-Bold', sans-serif;
+  color: #4a4a4a;
+  max-width: 750px;
+  font-size: 1rem;
+  line-height: 1.6;
+  margin-bottom: 40px;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  gap: 15px;
+  padding: 24px 5px 18px 0px;
+}
+
+.view-btn {
+  font-size: 16px;
+  background-color: #2eb6a7;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all 0.3s;
+  font-weight: 500;
+}
+
+.view-btn:hover {
+  box-shadow: 0 5px 15px rgba(120, 134, 133, 0.4);
+}
+
+.meeting-btn {
+  font-size: 16px;
+  background-color: transparent;
+  border: 1.5px solid #2eb6a7;
+  color: #2eb6a7;
+  padding: 12px 25px;
+  border-radius: 4px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.meeting-btn:hover {
+  background-color: #2eb6a7;
+  color: transparent;
+}
+
+/*Socials*/
+.socials {
+  display: inline-flex;
+  gap: 20px;
+  vertical-align: middle;
+}
+
+.socials a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 520;
+  margin-right: 5px;
+  transition: color 0.3s ease;
+}
+
+.socials a:hover {
+  color: #007bff;
+}
+
+/* what-we-do-section */
+.what-we-do-section {
+  padding: 100px 75px;
+  text-align: center;
+  background: #ffffff;
+}
+
+.section-title {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.section-subtitle {
+  color: #666;
+  font-size: 15px;
+  margin-bottom: 40px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+}
+
+.service-card {
+  background: #f8fbff;
+  padding: 25px;
+  border-radius: 12px;
+  text-align: left;
+  text-decoration: none;
+  color: #222222;
+  transition: 0.3s ease;
+  border: 1px solid #ebf2fc;
+}
+
+.service-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 18px rgba(0, 0, 0, 0.08);
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  margin: 18px;
+}
+
+.service-card h3 {
+  font-size: 19px;
+  font-weight: 600;
+  margin: 18px;
+}
+
+.service-card p {
+  font-size: 16px;
+  margin: 18px;
+}
+
+.service-card h3,
+.service-card p {
+  background: linear-gradient(90deg, #324e69, #7a81ee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* Footer */
+.main-footer {
+  background: #f3f5f7;
+  padding: 60px 0 80px;
+  font-family: "Inter", sans-serif;
+  color: #4a4a4a;
+}
+
+.footer-container {
+  width: 90%;
+  max-width: 1300px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 40px;
+}
+
+.footer-logo {
+  width: 160px;
+  margin-bottom: 15px;
+}
+
+.footer-col h4 {
+  font-size: 17px;
+  font-weight: 600;
+  margin: 10px 22px;
+  color: #2e2c2c;
+}
+
+.footer-col a {
+  display: block;
+  margin: 10px 22px;
+  color: #4a4a4a;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.footer-col a:hover {
+  color: #0a84ff;
+}
+
+.footer-social i {
+  font-size: 20px;
+  margin: 10px 18px;
+  color: #4a4a4a;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.footer-social i:hover {
+  color: #0a84ff;
+}
+
+.footer-bottom {
+  text-align: center;
+  margin-top: 40px;
+  padding-top: 20px;
+  border-top: 1px solid #ddd;
+  font-size: 14px;
+  color: #777;
+}
+
+/* mobile view */
+@media (max-width: 750px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #fffaf5;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    gap: 0;
+    padding: 20px 0;
+  }
+
+  .nav-links li {
+    text-align: center;
+    margin: 10px 0;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .hamburger {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+  }
+
+  .socials {
+    display: none; 
+  }
+
+  .navbar {
+    padding: 20px 30px;
+  }
+
+  .hero {
+    padding: 60px 20px;
+  }
+}
+
+/* hide hamburger on desktop */
+.hamburger {
+  display: none;
+}
