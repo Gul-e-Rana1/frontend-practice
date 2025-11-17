@@ -292,7 +292,7 @@ body {
 
 /* Footer */
 .main-footer {
-  background: #f3f5f7;
+  background: #fffaf3;
   padding: 60px 0 80px;
   font-family: "Inter", sans-serif;
   color: #4a4a4a;
@@ -398,4 +398,5 @@ body {
 .hamburger {
   display: none;
 }
+
 
