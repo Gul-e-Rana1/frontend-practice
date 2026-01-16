@@ -408,6 +408,7 @@ body {
     .buttons {
         margin: 0 auto;
         align-items: center;
+        justify-content: center
     }
 
     /* Center badge */
@@ -422,5 +423,6 @@ body {
         justify-items: center;
     }
 }
+
 
 
